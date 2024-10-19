@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <title>Raiane Melo - Nutri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/formStyle.css">
+</head>
+
+<body>
+  <header>
+    <section class="container">
+      <nav class="container__menu">
+        <a href="#" class="container__menu-link">Inicio</a>
+        <a href="#" class="container__menu-link">Serviços</a>
+        <a href="#" class="container__menu-link">Contato</a>
+      </nav>
+      <div class="container__img"><img src="assets/img/logo-rm.png" alt="Logo RM"></div>
+    </section>
+  </header>
+  <main>
+    <div class="container__corpo">
+      <section>
+        <h1>Raiane Melo</h1>
+        <span>Nutricionista</span>
+      </section>
+      <section>
+        <button id="btnAgendarConsulta">Agende sua consulta</button>
+      </section>
+    </div>
+
+    <section class="cards">
+      <p class="titulo"> Serviços</p>
+      <ul id="servicosList" class="card"></ul>
+    </section>
+
+    <p class="titulo">Sobre mim</p>
+    <section class="container__geral">
+      <section class="container__info">
+        <div><img src="assets/img/profile.png" alt="Foto Raiane"></div>
+        <div class="descricao">
+          <p class="descricao__titulo">Formação & Carreira</p>
+
+          <h2 class="descricao__subtitulo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book</h2>
+
+          <div class="descricao__detalhada">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+          <button class="btn" id="btnSaibaMais">Saiba mais sobre mim</button>
+        </div>
+      </section>
+    </section>
+
+
+    <p class="titulo">Testemunhos</p>
+    <section class="container__testemunhos">
+      <ul id="testemunhosList" class="testemunhos__lista"></ul>
+    </section>
+
+    <p class="titulo">Contato</p>
+    <section class="container__contatos">
+      <form id="formContato">
+        <div>
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome" required>
+        </div>
+        <div>
+          <label for="whatsapp">WhatsApp:</label>
+          <input type="text" id="whatsapp" name="whatsapp" placeholder="(99) 99999-9999" required>
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+        </div>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <div>
+        <ul>
+          <li>
+            <span></span>
+            <p>test@gmail.com</p>
+          </li>
+          <li>
+            <span></span>
+            <p>(303) 555-0105</p>
+          </li>
+          <li>
+            <span></span>
+            <p>2715 Ash Dr. San Jose, South Dakota 83475</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Todos os direitos reservados Desenvolvido &#169; <br> Bira Jr DEV</p>
+  </footer>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="assets/javascript/enviar_email.js"></script>
+  <script src="assets/javascript/scripts.js"></script>
+</body>
+
+</html>

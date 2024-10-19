@@ -1,0 +1,50 @@
+@import url(style.css);
+
+.container__contatos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.25rem;
+}
+
+#formContato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.88rem;
+}
+
+#formContato div {
+  display: flex;
+  flex-direction: column;
+}
+
+#nome,
+#whatsapp,
+#email {
+  width: 23.375rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: var(--cor-secundaria);
+}
+
+#mensagem {
+  width: 23.375rem;
+  height: 7.5rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--cor-secundaria);
+}
+
+#email::placeholder {
+  color: var(--branco);
+}
+#nome::placeholder{
+  color: var(--branco);
+}
+#whatsapp::placeholder{
+  color: var(--branco);
+}
+#mensagem::placeholder {
+  color: var(--branco);
+}
