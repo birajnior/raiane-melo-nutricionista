@@ -18,33 +18,56 @@
   flex-direction: column;
 }
 
-#nome,
-#whatsapp,
-#email {
+.nome,
+.whatsapp,
+.email {
+  box-sizing: border-box;
   width: 23.375rem;
   height: 3.5rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background: var(--cor-secundaria);
+  font-family: var(--font-primaria);
+  padding: 20px;
 }
 
-#mensagem {
+.nome::placeholder,
+.whatsapp::placeholder,
+.email::placeholder,
+.mensagem::placeholder {
+  color: var(--branco);
+}
+
+.mensagem {
   width: 23.375rem;
   height: 7.5rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: var(--cor-secundaria);
 }
 
-#email::placeholder {
+.btn-form {
+  width: 10.5rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  border-radius: 3.8125rem;
+  border: 3px solid var(--cor-principal);
+  background: var(--branco);
+  font-family: var(--font-primaria);
+  color: var(--cor-secundaria);
+  font-size: 1.2rem;
+}
+
+.btn-form:hover {
+  cursor: pointer;
+  border: none;
+  background: var(--cor-secundaria);
   color: var(--branco);
 }
-#nome::placeholder{
-  color: var(--branco);
-}
-#whatsapp::placeholder{
-  color: var(--branco);
-}
-#mensagem::placeholder {
-  color: var(--branco);
+
+.nome,
+.whatsapp,
+.email,
+.mensagem:focus {
+  outline: 0;
 }

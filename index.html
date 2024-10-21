@@ -80,22 +80,22 @@
     <section class="container__contatos">
       <form id="formContato">
         <div>
-          <label for="nome">Nome Completo:</label>
-          <input type="text" id="nome" name="nome" placeholder="Nome" required>
+          <!-- <label for="nome">Nome Completo:</label> -->
+          <input type="text" class="nome" id="nome" name="nome" placeholder="Nome Completo" required>
         </div>
         <div>
-          <label for="whatsapp">WhatsApp:</label>
-          <input type="text" id="whatsapp" name="whatsapp" placeholder="(99) 99999-9999" required>
+          <!-- <label for="whatsapp">WhatsApp:</label> -->
+          <input type="text" class="whatsapp" id="whatsapp" name="whatsapp" placeholder="WhatsApp: (99) 99999-9999" required>
         </div>
         <div>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+          <!-- <label for="email">E-mail:</label> -->
+          <input type="email" class="email" id="email" name="email" placeholder="E-mail: exemplo@gmail.com" required>
         </div>
         <div>
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui" required></textarea>
+          <!-- <label for="mensagem">Mensagem:</label> -->
+          <textarea class="mensagem" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui" required></textarea>
         </div>
-        <button type="submit">Enviar</button>
+        <button class="btn-form" type="submit">Enviar</button>
       </form>
       <div>
         <ul>
@@ -121,6 +121,7 @@
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="assets/javascript/enviar_email.js"></script>
   <script src="assets/javascript/scripts.js"></script>
+  <script src="assets/javascript/form.js"></script>
 </body>
 
 </html>
