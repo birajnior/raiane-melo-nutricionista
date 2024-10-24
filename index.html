@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   <title>Raiane Melo - Nutri</title>
+
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,9 +18,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/styles/reset.css">
   <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="stylesheet" href="assets/styles/formStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ANIMAÇÃO -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -51,8 +61,8 @@
     <p class="titulo">Sobre mim</p>
     <section class="container__geral">
       <section class="container__info">
-        <div><img src="assets/img/profile.png" alt="Foto Raiane"></div>
-        <div class="descricao">
+        <div data-aos="fade-down" data-aos-duration="2500"><img src="assets/img/profile.png" alt="Foto Raiane"></div>
+        <div class="descricao" data-aos="fade-up" data-aos-duration="2500">
           <p class="descricao__titulo">Formação & Carreira</p>
 
           <h2 class="descricao__subtitulo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -81,11 +91,12 @@
       <form id="formContato">
         <div>
           <!-- <label for="nome">Nome Completo:</label> -->
-          <input type="text" class="nome" id="nome" name="nome" placeholder="Nome Completo" required>
+          <input type="text" class="nome" id="nome" name="nome" placeholder="Nome Completo:" required>
         </div>
         <div>
           <!-- <label for="whatsapp">WhatsApp:</label> -->
-          <input type="text" class="whatsapp" id="whatsapp" name="whatsapp" placeholder="WhatsApp: (99) 99999-9999" required>
+          <input type="text" class="whatsapp" id="whatsapp" name="whatsapp" placeholder="WhatsApp: (99) 99999-9999"
+            required>
         </div>
         <div>
           <!-- <label for="email">E-mail:</label> -->
@@ -93,23 +104,24 @@
         </div>
         <div>
           <!-- <label for="mensagem">Mensagem:</label> -->
-          <textarea class="mensagem" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui" required></textarea>
+          <textarea class="mensagem" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui:"
+            required></textarea>
         </div>
         <button class="btn-form" type="submit">Enviar</button>
       </form>
       <div>
-        <ul>
+        <ul class="info__contatos">
           <li>
-            <span></span>
-            <p>test@gmail.com</p>
+            <i class="fa-solid fa-envelope"></i>
+            <p class="contatos__texto">test@gmail.com</p>
           </li>
           <li>
-            <span></span>
-            <p>(303) 555-0105</p>
+            <i class="fa-solid fa-phone"></i>
+            <p class="contatos__texto">(303) 555-0105</p>
           </li>
           <li>
-            <span></span>
-            <p>2715 Ash Dr. San Jose, South Dakota 83475</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="contatos__texto">2715 Ash Dr. San Jose, South Dakota 83475</p>
           </li>
         </ul>
       </div>
@@ -117,8 +129,18 @@
   </main>
   <footer>
     <p>Todos os direitos reservados Desenvolvido &#169; <br> Bira Jr DEV</p>
+    <ul class="icones">
+      <li><a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
   </footer>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
   <script src="assets/javascript/enviar_email.js"></script>
   <script src="assets/javascript/scripts.js"></script>
   <script src="assets/javascript/form.js"></script>

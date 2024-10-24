@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.88rem;
+  justify-content: center;
 }
 
 #formContato div {
@@ -26,7 +27,7 @@
   height: 3.5rem;
   border: none;
   border-radius: 1rem;
-  background: var(--cor-secundaria);
+  background: var(--cor-principal);
   font-family: var(--font-primaria);
   padding: 20px;
 }
@@ -43,7 +44,10 @@
   height: 7.5rem;
   border: none;
   border-radius: 0.5rem;
-  background: var(--cor-secundaria);
+  background: var(--cor-principal);
+  font-family: var(--font-primaria);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .btn-form {
@@ -54,7 +58,7 @@
   border: 3px solid var(--cor-principal);
   background: var(--branco);
   font-family: var(--font-primaria);
-  color: var(--cor-secundaria);
+  color: var(--cor-principal);
   font-size: 1.2rem;
 }
 
@@ -70,4 +74,31 @@
 .email,
 .mensagem:focus {
   outline: 0;
+  color: var(--branco);
+}
+
+.info__contatos {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__contatos li {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.4rem;
+}
+
+.info__contatos i {
+  font-size: 1.5rem;
+  color: var(--cor-secundaria);
+}
+
+.contatos__texto {
+  color: var(--cor-principal);
+  font-family: var(--font-secundaria);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }

@@ -66,8 +66,8 @@ const gerarServicos = () => {
 
     li.innerHTML = `
      <img src="${servicos.imagem}" alt="Imagem do serviço oferecido">
-      <h3>${servicos.titulo}</h3>
-      <h4>${servicos.descricao}</h4>
+      <h1>${servicos.titulo}</h1>
+      <h2>${servicos.descricao}</h2>
     `;
 
     servicosLista.appendChild(li);
@@ -86,8 +86,8 @@ const gerarTestemunhos = () => {
     li.innerHTML = `
       <img class="testemunhos__lista-item-img" src="${testemunho.imagem}" alt="${testemunho.nome}">
       <div class="informacoes">
-        <h3 class="testemunhos__lista-item-nome">${testemunho.nome}</h3>
-        <h5 class="testemunhos__lista-item-testemunho">${testemunho.texto}</h5>
+        <h1 class="testemunhos__lista-item-nome">${testemunho.nome}</h1>
+        <h2 class="testemunhos__lista-item-testemunho">${testemunho.texto}</h2>
         <img class="avaliacao-img" src="${testemunho.avaliacao}" alt="Avaliação de ${testemunho.nome}">
       </div>
     `;
@@ -101,28 +101,3 @@ document.addEventListener("DOMContentLoaded", () => {
   gerarServicos();
   gerarTestemunhos();
 });
-
-
-
-
-const btn = document.getElementById("btn-enviar");
-
-btn.addEventListener("click", () => {
-  (function() {
-    emailjs.init("qZv2kU5Wt8-kGyd8M"); // Coloque seu ID de usuário EmailJS
-  })();
-  
-  // Lidando com o envio do formulário
-  document.getElementById("formContato").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita o reload da página ao enviar o formulário
-  
-    emailjs.sendForm('service_7s18yah', 'template_n16360x', this)
-      .then(function() {
-        alert("Mensagem enviada com sucesso!");
-      }, function(error) {
-        alert("Erro ao enviar a mensagem. Tente novamente.");
-        console.error("Erro: ", error);
-      });
-  });
-  
-})
