@@ -40,8 +40,8 @@
   background-size: cover;
 }
 
-.container__corpo h1,
-span {
+.corpo__titulo,
+.corpo__subtitulo {
   font-family: var(--font-primaria);
   font-weight: 900;
   font-size: 6rem;
@@ -69,16 +69,16 @@ span {
   font-weight: 700;
 }
 
-.container__corpo h1,
+.corpo__titulo,
 button {
   margin-left: 5rem;
 }
 
-.container__corpo h1 {
+.corpo__titulo {
   margin-top: 4rem;
 }
 
-.container__corpo span {
+.corpo__subtitulo {
   margin-left: 12rem;
 }
 

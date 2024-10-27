@@ -45,8 +45,8 @@
   <main>
     <div class="container__corpo">
       <section>
-        <h1>Raiane Melo</h1>
-        <span>Nutricionista</span>
+        <h1 class="corpo__titulo">Raiane Melo</h1>
+        <h2 class="corpo__subtitulo">Nutricionista</h2>
       </section>
       <section>
         <button id="btnAgendarConsulta">Agende sua consulta</button>
@@ -90,22 +90,23 @@
     <section class="container__contatos">
       <form id="formContato">
         <div>
-          <!-- <label for="nome">Nome Completo:</label> -->
-          <input type="text" class="nome" id="nome" name="nome" placeholder="Nome Completo:" required>
+          <input type="text" class="requerido nome" id="nome" name="nome" placeholder="Nome Completo:" oninput="validacaoNome()" required>
+          <span class="span-requerido">Nome deve ter no mínimo 3 caracteres</span>
         </div>
         <div>
-          <!-- <label for="whatsapp">WhatsApp:</label> -->
-          <input type="text" class="whatsapp" id="whatsapp" name="whatsapp" placeholder="WhatsApp: (99) 99999-9999"
+          <input type="text" class="requerido whatsapp" id="whatsapp" name="whatsapp"
+            placeholder="WhatsApp: 99 999999999" oninput="validacaoWhatsapp()" required>
+            <span class="span-requerido">Insira penas números</span>
+        </div>
+        <div>
+          <input type="email" class="requerido email" id="email" name="email" placeholder="E-mail: exemplo@gmail.com" oninput="validandoEmail()"
             required>
+            <span class="span-requerido">Digite um email válido</span>
         </div>
         <div>
-          <!-- <label for="email">E-mail:</label> -->
-          <input type="email" class="email" id="email" name="email" placeholder="E-mail: exemplo@gmail.com" required>
-        </div>
-        <div>
-          <!-- <label for="mensagem">Mensagem:</label> -->
-          <textarea class="mensagem" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui:"
-            required></textarea>
+          <textarea class="requerido mensagem" id="mensagem" name="mensagem" rows="4"
+            placeholder="Digite sua mensagem aqui:" oninput="validandoMensagem()" required></textarea>
+            <span class="span-requerido">A mensagem deve ter no mínimo 10 caracteres</span>
         </div>
         <button class="btn-form" type="submit">Enviar</button>
       </form>
@@ -144,6 +145,7 @@
   <script src="assets/javascript/enviar_email.js"></script>
   <script src="assets/javascript/scripts.js"></script>
   <script src="assets/javascript/form.js"></script>
+  <script src="assets/javascript/validacaoForm.js"></script>
 </body>
 
 </html>

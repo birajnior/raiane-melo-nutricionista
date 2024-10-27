@@ -6,11 +6,11 @@ const textArea = document.querySelector("textarea.mensagem");
 const handlePlaceholder = (element) => {
     element.setAttribute('data-placeholder', element.placeholder); // Armazena o placeholder original
 
-    element.addEventListener("focus", function() {
+    element.addEventListener("focus", function () {
         this.placeholder = ""; // Remove o placeholder
     });
 
-    element.addEventListener("blur", function() {
+    element.addEventListener("blur", function () {
         if (this.value === "") {
             this.placeholder = this.getAttribute("data-placeholder"); // Restaura o placeholder
         }
