@@ -12,21 +12,21 @@ btnSaibaMais.addEventListener("click", () => {
 const servicos = [
   {
     imagem: "assets/img/servico1.png",
-    titulo: "Lorem Ipsum",
+    titulo: "Plano Alimentar Individualizado",
     descricao:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. lorem Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+      "Elaboração de um plano alimentar personalizado, adaptado às necessidades, objetivos e rotina do cliente. Visa promover a saúde e atingir metas específicas, como perda de peso, ganho muscular ou melhoria de desempenho.",
   },
   {
     imagem: "assets/img/servico2.png",
-    titulo: "Lorem Ipsum",
+    titulo: "Análise Antropométrica",
     descricao:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Medição de parâmetros corporais, como peso, altura, circunferências e percentual de gordura. Esta análise é essencial para monitorar o progresso ao longo do acompanhamento nutricional.",
   },
   {
     imagem: "assets/img/servico3.png",
-    titulo: "Lorem Ipsum",
+    titulo: "Receitas e Lista de Compras",
     descricao:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Receitas saudáveis e práticas, adaptadas às preferências e necessidades do cliente, para facilitar o cumprimento do plano alimentar. Inclui uma lista de compras orientada, ajudando a selecionar alimentos de qualidade e alinhados ao plano, simplificando o processo de compra e evitando desperdícios.",
   },
 ];
 
@@ -66,8 +66,8 @@ const gerarServicos = () => {
 
     li.innerHTML = `
      <img src="${servicos.imagem}" alt="Imagem do serviço oferecido">
-      <h1>${servicos.titulo}</h1>
-      <h2>${servicos.descricao}</h2>
+      <h1  class="li__card--titulo">${servicos.titulo}</h1>
+      <h2  class="li__card--descricao" >${servicos.descricao}</h2>
     `;
 
     servicosLista.appendChild(li);

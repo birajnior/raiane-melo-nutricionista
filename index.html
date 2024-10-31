@@ -56,6 +56,7 @@
     <section class="cards">
       <p class="titulo"> Serviços</p>
       <ul id="servicosList" class="card"></ul>
+      <button class="btn-card">Veja Todos os Serviços</button>
     </section>
 
     <p class="titulo">Sobre mim</p>
@@ -65,15 +66,17 @@
         <div class="descricao" data-aos="fade-up" data-aos-duration="2500">
           <p class="descricao__titulo">Formação & Carreira</p>
 
-          <h2 class="descricao__subtitulo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book</h2>
+          <h2 class="descricao__subtitulo">Graduada em Nutrição pelo Centro Acadêmico de Vitória (CAV/UFPE), com
+            experiência em Avaliação do Estado Nutricional como monitora. Participante do Programa Institucional de
+            Bolsas de Iniciação Científica (PIBIC), com pesquisa focada na qualidade de vida dos usuários do programa
+            MOVIMENTA VITÓRIA, em Vitória de Santo Antão.</h2>
 
           <div class="descricao__detalhada">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p class="descricao__detalhada-paragrafo">Estágio em coletividade enferma. </p>
+            <p class="descricao__detalhada-paragrafo">Estágio em coletividade sadia. </p>
+            <p class="descricao__detalhada-paragrafo">Estágio em nutrição e saúde pública. </p>
+            <p class="descricao__detalhada-paragrafo">Movimentando Vitória de Santo Antão para promoção a saúde e qualidade de vida.</p>
+            <p class="descricao__detalhada-paragrafo">Nutrição em evidência: vamos conversar?</p>
           </div>
           <button class="btn" id="btnSaibaMais">Saiba mais sobre mim</button>
         </div>
@@ -90,23 +93,24 @@
     <section class="container__contatos">
       <form id="formContato">
         <div>
-          <input type="text" class="requerido nome" id="nome" name="nome" placeholder="Nome Completo:" oninput="validacaoNome()" required>
+          <input type="text" class="requerido nome" id="nome" name="nome" placeholder="Nome Completo:"
+            oninput="validacaoNome()" required>
           <span class="span-requerido">Nome deve ter no mínimo 3 caracteres</span>
         </div>
         <div>
           <input type="text" class="requerido whatsapp" id="whatsapp" name="whatsapp"
             placeholder="WhatsApp: 99 999999999" oninput="validacaoWhatsapp()" required>
-            <span class="span-requerido">Insira penas números</span>
+          <span class="span-requerido">Insira penas números</span>
         </div>
         <div>
-          <input type="email" class="requerido email" id="email" name="email" placeholder="E-mail: exemplo@gmail.com" oninput="validandoEmail()"
-            required>
-            <span class="span-requerido">Digite um email válido</span>
+          <input type="email" class="requerido email" id="email" name="email" placeholder="E-mail: exemplo@gmail.com"
+            oninput="validandoEmail()" required>
+          <span class="span-requerido">Digite um email válido</span>
         </div>
         <div>
           <textarea class="requerido mensagem" id="mensagem" name="mensagem" rows="4"
             placeholder="Digite sua mensagem aqui:" oninput="validandoMensagem()" required></textarea>
-            <span class="span-requerido">A mensagem deve ter no mínimo 10 caracteres</span>
+          <span class="span-requerido">A mensagem deve ter no mínimo 10 caracteres</span>
         </div>
         <button class="btn-form" type="submit">Enviar</button>
       </form>
@@ -114,15 +118,15 @@
         <ul class="info__contatos">
           <li>
             <i class="fa-solid fa-envelope"></i>
-            <p class="contatos__texto">test@gmail.com</p>
+            <p class="contatos__texto"> meloraiane524@gmail.com</p>
           </li>
           <li>
             <i class="fa-solid fa-phone"></i>
-            <p class="contatos__texto">(303) 555-0105</p>
+            <p class="contatos__texto"> (81) 98795-2709</p>
           </li>
           <li>
             <i class="fa-solid fa-location-dot"></i>
-            <p class="contatos__texto">2715 Ash Dr. San Jose, South Dakota 83475</p>
+            <p class="contatos__texto">R. Dr. Ivo Queiroz, n° 137 - Vitória de Santo Antão- PE</p>
           </li>
         </ul>
       </div>

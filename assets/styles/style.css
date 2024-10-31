@@ -112,32 +112,34 @@ button {
   margin-top: 4.38rem;
   margin-bottom: 3.15rem;
 }
-
+/* styles dos cards de serviços */
 .card {
   display: flex;
   gap: 2.31rem;
+  align-items: center;
 }
 
 .card__li {
   width: 24.0625rem;
-  height: 31.5rem;
+  height: 34rem;
   border-radius: 1.875rem;
   background: var(--branco);
-  box-shadow: 0px 10px 30px 0px rgba(16, 51, 30, 0.1);
+  box-shadow: 0px 10px 15px 0px rgba(16, 51, 30, 0.1);
+  box-sizing: border-box;
 }
 
-.card__li h3 {
+.li__card--titulo {
   width: 20.3125rem;
   color: var(--cor-principal);
   font-family: var(--font-primaria);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.5rem;
   margin: 1.88rem 1.88rem 0.65rem 1.88rem;
 }
 
-.card__li h4 {
+.li__card--descricao {
   width: 20.3125rem;
   color: var(--cor-principal);
   font-family: var(--font-primaria);
@@ -148,9 +150,31 @@ button {
   margin: 0 1.88rem 1.88rem 1.88rem;
 }
 
+.btn-card {
+  margin-top: 3rem;
+  height: 4rem;
+  padding: 0.875rem 2.29rem 1.0625rem 2.29563rem;
+  align-items: center;
+  border: none;
+  border-radius: 3.125rem;
+  background: var(--cor-principal);
+  color: var(--branco);
+  text-align: center;
+  font-family: var(--font-secundaria);
+  font-size: 1.125rem;
+  font-weight: 400;
+  box-shadow: 0px 10px 15px 0px rgba(16, 51, 30, 0.1);
+}
+.btn-card:hover {
+  cursor: pointer;
+  background: var(--cor-secundaria);
+  opacity: 1;
+  transition: 4ms;
+}
+/* styles da section sobre mim */
 .container__geral {
   height: 54rem;
-  background-image: url(/assets/img/capa2.png);
+  background-image: url(/assets/img/capa3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,7 +195,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   gap: 1.3125rem;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
 }
 
 .descricao__titulo {
@@ -188,14 +212,12 @@ button {
   color: var(--branco);
   font-family: var(--font-secundaria);
   font-size: 1.5rem;
-  font-weight: 400;
-  margin-top: 2.45rem;
-}
-.descricao__detalhada {
-  margin: 1.32rem 0;
+  font-weight: 500;
+  margin-top: 1rem;
+  line-height: 2.6rem;
 }
 
-.descricao__detalhada p {
+.descricao__detalhada-paragrafo {
   color: var(--branco);
   font-family: var(--font-secundaria);
   font-size: 1rem;
@@ -208,7 +230,7 @@ button {
 .btn {
   margin: 0;
   display: flex;
-  height: 4.5rem;
+  height: 4rem;
   padding: 0.875rem 2.29rem 1.0625rem 2.29563rem;
   align-items: center;
   border: none;
@@ -225,6 +247,7 @@ button {
   cursor: pointer;
   background: var(--cor-secundaria);
   opacity: 1;
+  transition: 4ms;
 }
 
 .testemunhos__lista {
