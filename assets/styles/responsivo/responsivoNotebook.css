@@ -38,6 +38,7 @@
   }
 
   .titulo {
+    /* Titulo das sections */
     font-size: 3rem;
   }
 
@@ -64,11 +65,39 @@
   }
 
   .container__geral {
-    height: 45rem;
+    height: 42rem;
   }
 
+  .descricao {
+    width: 38rem;
+    height: 39rem;
+  }
+
+  .img-sobremim {
+    width: 470px;
+  }
   .descricao__titulo {
     font-size: 3.5rem;
+  }
+
+  .descricao__subtitulo {
+    font-size: 1rem;
+    line-height: 1.98rem;
+  }
+
+  .descricao__detalhada-paragrafo {
+    font-size: 0.875rem;
+    line-height: 1.7rem;
+  }
+
+  .btn{
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+
+  .testemunhos__lista-item {
+    width: 33rem;
+    max-height: 12rem;
   }
 
   .container__contatos {
@@ -81,8 +110,9 @@
   .mensagem {
     width: 22rem;
     height: 3.25rem;
-    font-size: 1.1rem;
-    padding: 18px;
+    font-size: 0.9rem;
+    padding: 1.125rem;
+    color: var(--branco);
   }
 
   .mensagem {
@@ -94,4 +124,16 @@
     height: 3.25rem;
     font-size: 1.1rem;
   }
+}
+
+footer {
+  height: 4rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+.icones a {
+  width: 0.625rem;
 }

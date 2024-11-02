@@ -29,7 +29,7 @@
   border-radius: 1rem;
   background: var(--cor-principal);
   font-family: var(--font-primaria);
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .nome::placeholder,
@@ -46,8 +46,9 @@
   border-radius: 0.5rem;
   background: var(--cor-principal);
   font-family: var(--font-primaria);
-  padding: 20px;
+  padding: 1.25rem;
   box-sizing: border-box;
+  color: var(--branco);
 }
 
 .btn-form {
@@ -55,7 +56,7 @@
   height: 3.5rem;
   flex-shrink: 0;
   border-radius: 3.8125rem;
-  border: 3px solid var(--cor-principal);
+  border: 0.1875rem solid var(--cor-principal);
   background: var(--branco);
   font-family: var(--font-primaria);
   color: var(--cor-principal);
