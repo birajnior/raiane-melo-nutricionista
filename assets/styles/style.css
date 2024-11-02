@@ -20,6 +20,15 @@
   gap: 1.5625rem;
 }
 
+.hamburger {
+  display: none;
+  color: var(--cor-principal);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .container__menu-link {
   color: var(--cor-principal);
   font-family: var(--font-secundaria);
@@ -125,6 +134,15 @@
   background: var(--branco);
   box-shadow: 0px 10px 15px 0px rgba(16, 51, 30, 0.1);
   box-sizing: border-box;
+}
+
+.li__card--img {
+  width: 100%; /* Faz com que a imagem ocupe toda a largura do card */
+  height: auto; /* Mantém a proporção da imagem */
+  border-top-left-radius: 1.875rem;
+  border-top-right-radius: 1.875rem;
+  object-fit: cover;
+  display: block;
 }
 
 .li__card--titulo {
