@@ -1,0 +1,86 @@
+/* Responsividade para celulares (480px) */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .container__menu-link {
+    font-size: 1rem;
+  }
+
+  .corpo__titulo {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    margin-left: 1rem;
+  }
+
+  .corpo__subtitulo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 2rem;
+  }
+
+  .cards {
+    gap: 1rem;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .card__li {
+    width: 18rem;
+    height: 26rem;
+  }
+
+  .container__geral {
+    height: 35rem;
+  }
+
+  .descricao__titulo {
+    font-size: 2.5rem;
+  }
+
+  .container__contatos {
+    padding: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  #formContato {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nome,
+  .whatsapp,
+  .email,
+  .mensagem {
+    width: 18rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .mensagem {
+    height: 5rem;
+  }
+
+  .btn-form {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .info__contatos li {
+    gap: 1rem;
+  }
+
+  .contatos__texto {
+    font-size: 0.875rem;
+  }
+
+  .span-requerido {
+    font-size: 0.7rem;
+  }
+}

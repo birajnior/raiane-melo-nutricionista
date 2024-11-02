@@ -1,0 +1,87 @@
+/* tablet.css */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .container__menu-link {
+    font-size: 1.2rem;
+  }
+
+  .corpo__titulo {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-left: 2rem;
+  }
+
+  .corpo__subtitulo {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 4rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .titulo {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card__li {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .container__geral {
+    height: 40rem;
+  }
+
+  .descricao {
+    width: 40rem;
+  }
+
+  .descricao__titulo {
+    font-size: 3rem;
+  }
+
+  .container__contatos {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  #formContato {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nome,
+  .whatsapp,
+  .email,
+  .mensagem {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .mensagem {
+    height: 6rem;
+  }
+
+  .btn-form {
+    width: 8.5rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .info__contatos li {
+    margin-bottom: 1.5rem;
+  }
+}

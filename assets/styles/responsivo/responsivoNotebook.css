@@ -1,0 +1,97 @@
+/* Responsividade para notebooks (1280px) */
+@media (min-width: 768px) and (max-width: 1366px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .container__menu-link {
+    font-size: 1.2rem;
+  }
+
+  .container__img {
+    width: 2.5rem;
+  }
+
+  .container__corpo {
+    height: 34rem;
+  }
+
+  .corpo__titulo {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .corpo__subtitulo {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-left: 9.1rem;
+  }
+
+  #btnAgendarConsulta {
+    height: 4rem;
+    margin-top: 3.5rem;
+    font-size: 1rem;
+  }
+
+  .cards {
+    gap: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .card__li {
+    width: 22rem;
+    height: 33rem;
+    box-shadow: 0px 10px 15px 0px rgba(16, 51, 30, 0.1);
+    box-sizing: border-box;    
+    overflow: hidden;
+    /* word-wrap: break-word;  */
+  }
+
+  .li__card--img {
+    width: 22rem;
+    border-radius: 1.875rem 2.875rem 0rem 0rem;
+  }
+
+  .li__card--descricao {
+    max-width: 21.255rem;
+    font-size: 0.75rem;
+    padding: 0rem 1.88rem 0.65rem 1.88rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .container__geral {
+    height: 45rem;
+  }
+
+  .descricao__titulo {
+    font-size: 3.5rem;
+  }
+
+  .container__contatos {
+    padding: 1rem;
+  }
+
+  .nome,
+  .whatsapp,
+  .email,
+  .mensagem {
+    width: 22rem;
+    height: 3.25rem;
+    font-size: 1.1rem;
+    padding: 18px;
+  }
+
+  .mensagem {
+    height: 7rem;
+  }
+
+  .btn-form {
+    width: 9.5rem;
+    height: 3.25rem;
+    font-size: 1.1rem;
+  }
+}

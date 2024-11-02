@@ -65,7 +65,7 @@ const gerarServicos = () => {
     li.classList.add("card__li");
 
     li.innerHTML = `
-     <img src="${servicos.imagem}" alt="Imagem do serviço oferecido">
+     <img class="li__card--img" src="${servicos.imagem}" alt="Imagem do serviço oferecido">
       <h1  class="li__card--titulo">${servicos.titulo}</h1>
       <h2  class="li__card--descricao" >${servicos.descricao}</h2>
     `;
