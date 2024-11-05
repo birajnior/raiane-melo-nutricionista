@@ -246,7 +246,7 @@
   margin-left: 2.5rem;
 }
 
-.btn {
+/* .btn {
   margin: 0;
   display: flex;
   height: 4rem;
@@ -267,7 +267,7 @@
   background: var(--cor-secundaria);
   opacity: 1;
   transition: 4ms;
-}
+} */
 
 .testemunhos__lista {
   display: flex;
