@@ -14,14 +14,17 @@
 
   .hamburger {
     position: relative;
-    width: 30px;
-    height: 28px;
+    width: 1.875rem;
+    height: 1.75rem;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .hamburger::before,
@@ -30,25 +33,25 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 0.1875rem;
     background-color: var(--cor-principal);
     transition: 0.3s ease;
   }
 
   .hamburger::before {
-    top: 4px;
+    top: 0.25rem;
   }
 
   .hamburger .line {
-    top: 12px;
+    top: 0.75rem;
   }
 
   .hamburger::after {
-    top: 20px;
+    top: 1.25rem;
   }
 
   .hamburger.active::before {
-    top: 12px;
+    top: 0.75rem;
     transform: rotate(45deg);
   }
 
@@ -57,7 +60,7 @@
   }
 
   .hamburger.active::after {
-    top: 12px;
+    top: 0.75rem;
     transform: rotate(-45deg);
   }
 

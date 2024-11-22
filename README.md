@@ -6,10 +6,6 @@
 
 Este website foi desenvolvido para a nutricionista Raiane Melo, com uma interface moderna e intuitiva. O objetivo é facilitar a apresentação dos serviços, oferecer uma experiência agradável e permitir que os visitantes realizem agendamentos diretamente na plataforma.
 
-## 🎨 Designer
-
-[Veja o design no Figma](#) para uma visão detalhada dos elementos visuais e componentes que guiaram o desenvolvimento deste projeto.
-
 ---
 
 ## 🚀 Tecnologias Utilizadas
