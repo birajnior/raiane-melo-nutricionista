@@ -25,6 +25,9 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-sizing: border-box;
   }
 
   .hamburger::before,
