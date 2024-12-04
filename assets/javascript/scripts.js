@@ -2,7 +2,7 @@ const btnAgendarConsulta = document.querySelector("#btnAgendarConsulta");
 const btnSaibaMais = document.querySelector("#btnSaibaMais");
 
 btnAgendarConsulta.addEventListener("click", () => {
-  alert("clicou");
+  window.open("https://wa.me/558187952709?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20nutricionista%20Raiane%20Melo.%20Poderia%20me%20informar%20as%20datas%20e%20horários%20disponíveis%3F", "_blank");
 });
 
 btnSaibaMais.addEventListener("click", () => {

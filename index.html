@@ -20,7 +20,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <!-- CSS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <!-- CSS --> 
   <link rel="stylesheet" href="assets/styles/reset.css">
   <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="stylesheet" href="assets/styles/formStyle.css">
@@ -28,7 +33,7 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Responsivos -->
-  <link rel="stylesheet" href="assets/styles/responsivo/responsivoNotebook.css">
+  <!-- <link rel="stylesheet" href="assets/styles/responsivo/responsivoNotebook.css"> -->
   <link rel="stylesheet" href="assets/styles/responsivo/responsivoTablet.css">
   <link rel="stylesheet" href="assets/styles/responsivo/responsivoMobile.css">
 
@@ -38,6 +43,9 @@
 </head>
 
 <body>
+  <a href="" class="whatsapp-fixo">
+    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+  </a>
   <header>
     <section class="container">
       <button class="hamburger" onclick="toggleMenu()">
@@ -45,14 +53,14 @@
       </button>
 
       <nav class="container__menu" id="menu">
-        <a href="#" class="container__menu-link">Inicio</a>
-        <a href="#" class="container__menu-link">Serviços</a>
-        <a href="#" class="container__menu-link">Contato</a>
+        <a href="#inicio" class="container__menu-link">Inicio</a>
+        <a href="#servicos" class="container__menu-link">Serviços</a>
+        <a href="#contato" class="container__menu-link">Contato</a>
       </nav>
       <img class="container__img" src="assets/img/logo-1.png" alt="Logo RM">
     </section>
   </header>
-  <main>
+  <main  id="inicio">
     <div class="container__corpo">
       <section>
         <h1 class="corpo__titulo">Raiane Melo</h1>
@@ -63,7 +71,7 @@
       </section>
     </div>
 
-    <section class="cards">
+    <section class="cards" id="servicos">
       <p class="titulo"> Serviços</p>
       <ul id="servicosList" class="card"></ul>
       <button class="btn-card">Veja Todos os Serviços</button>
@@ -72,7 +80,8 @@
     <p class="titulo">Sobre mim</p>
     <section class="container__geral">
       <section class="container__info">
-        <div data-aos="fade-down" data-aos-duration="2500"><img class="img-sobremim" src="assets/img/profile.png" alt="Foto Raiane"></div>
+        <div data-aos="fade-down" data-aos-duration="2500"><img class="img-sobremim" src="assets/img/profile.png"
+            alt="Foto Raiane"></div>
         <div class="descricao" data-aos="fade-up" data-aos-duration="2500">
           <p class="descricao__titulo">Formação & Carreira</p>
 
@@ -95,14 +104,15 @@
     </section>
 
 
-    <p class="titulo">Testemunhos</p>
+    <!-- <p class="titulo">Testemunhos</p>
     <section class="container__testemunhos">
       <ul id="testemunhosList" class="testemunhos__lista"></ul>
-    </section>
+    </section> -->
 
-    <p class="titulo">Contato</p>
+    <p class="titulo" id="contato">Contato</p>
     <section class="container__contatos">
       <form id="formContato">
+
         <div>
           <input type="text" class="requerido nome" id="nome" name="nome" placeholder="Nome Completo:"
             oninput="validacaoNome()" required>
@@ -125,6 +135,7 @@
         </div>
         <button class="btn-form" type="submit">Enviar</button>
       </form>
+
       <div>
         <ul class="info__contatos">
           <li>
@@ -135,30 +146,29 @@
             <i class="fa-solid fa-phone"></i>
             <p class="contatos__texto"> (81) 98795-2709</p>
           </li>
-          <li>
+          <!-- <li>
             <i class="fa-solid fa-location-dot"></i>
             <p class="contatos__texto">R. Dr. Ivo Queiroz, n° 137 - Vitória de Santo Antão- PE</p>
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
   </main>
   <footer>
-    <p>Todos os direitos reservados &#169;</p>
-    <p>&lt;JB /&gt;</p>
+    <p>2024 &#169; Desenvolvido por &lt;JB /&gt;</p>
     <ul class="icones">
       <li><a
           href="mailto:ubiratanbernardo@outlook.com?subject=Contato%20para%20solicitar%20or%C3%A7amento%20de%20cria%C3%A7%C3%A3o%20de%20websites&body=Por%20favor,%20descreva%20suas%20necessidades%20e%20detalhes%20do%20projeto%20que%20deseja%20realizar."
-          target="_blank">
-          <i class="fa-solid fa-envelope"></i>
+          target="_blank" class="icones__link">
+          <i class="fa-solid fa-envelope icones__sociais"></i>
         </a></li>
       <li><a
           href="https://wa.me/5511932349135?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20website.%20Poderia%20me%20passar%20mais%20informações%3F"
-          target="_blank">
-          <i class="fa-brands fa-whatsapp"></i>
+          target="_blank" class="icones__link">
+          <i class="fa-brands fa-whatsapp icones__sociais"></i>
         </a></li>
-      <li><a href="https://www.instagram.com/jbdeveloper" target="_blank">
-          <i class="fa-brands fa-instagram">
+      <li><a href="https://www.instagram.com/jbdeveloper" target="_blank" class="icones__link">
+          <i class="fa-brands fa-instagram icones__sociais">
 
           </i></a></li>
     </ul>
