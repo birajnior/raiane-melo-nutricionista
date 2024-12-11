@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 1279px) {
   .container {
     justify-content: space-between;
     align-items: center;
@@ -49,13 +49,12 @@
     height: 30rem;
   }
 
-  .li__card--titulo{
+  .li__card--titulo {
     width: 19rem;
     padding: 1rem 1rem 0.65rem 1rem;
-    
   }
 
-  .li__card--descricao{
+  .li__card--descricao {
     width: 19rem;
     padding: 0 1rem 1rem 0.88rem;
   }
@@ -65,7 +64,7 @@
     align-items: center;
   }
 
-  .container__info{
+  .container__info {
     flex-direction: column;
     align-items: center;
     gap: 1rem;

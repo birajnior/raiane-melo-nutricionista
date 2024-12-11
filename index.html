@@ -1,188 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <title>Raiane Melo - Nutri</title>
 
-  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-  <title>Raiane Melo - Nutri</title>
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/formStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Responsivos -->
+    <link
+      rel="stylesheet"
+      href="assets/styles/responsivo/responsivoMobile.css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet">
-  <!-- CSS --> 
-  <link rel="stylesheet" href="assets/styles/reset.css">
-  <link rel="stylesheet" href="assets/styles/style.css">
-  <link rel="stylesheet" href="assets/styles/formStyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Responsivos -->
-  <!-- <link rel="stylesheet" href="assets/styles/responsivo/responsivoNotebook.css"> -->
-  <link rel="stylesheet" href="assets/styles/responsivo/responsivoTablet.css">
-  <link rel="stylesheet" href="assets/styles/responsivo/responsivoMobile.css">
+    <link
+      rel="stylesheet"
+      href="assets/styles/responsivo/responsivoTablet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/styles/responsivo/responsivoNotebook.css"
+    />
 
-  <!-- ANIMAÇÃO -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ANIMAÇÃO -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+  </head>
 
-</head>
+  <body>
+    <a href="" class="whatsapp-fixo">
+      <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <header>
+      <section class="container">
+        <button
+          class="hamburger"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          onclick="toggleMenu()"
+        >
+          <div class="line"></div>
+        </button>
 
-<body>
-  <a href="" class="whatsapp-fixo">
-    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
-  </a>
-  <header>
-    <section class="container">
-      <button class="hamburger" onclick="toggleMenu()">
-        <div class="line"></div>
-      </button>
-
-      <nav class="container__menu" id="menu">
-        <a href="#inicio" class="container__menu-link">Inicio</a>
-        <a href="#servicos" class="container__menu-link">Serviços</a>
-        <a href="#contato" class="container__menu-link">Contato</a>
-      </nav>
-      <img class="container__img" src="assets/img/logo-1.png" alt="Logo RM">
-    </section>
-  </header>
-  <main  id="inicio">
-    <div class="container__corpo">
-      <section>
-        <h1 class="corpo__titulo">Raiane Melo</h1>
-        <h2 class="corpo__subtitulo">Nutricionista</h2>
+        <nav class="container__menu" id="menu">
+          <a href="#inicio" class="container__menu-link">Inicio</a>
+          <a href="#servicos" class="container__menu-link">Serviços</a>
+          <a href="#contato" class="container__menu-link">Contato</a>
+        </nav>
+        <img class="container__img" src="assets/img/logo-1.png" alt="Logo RM" />
       </section>
-      <section>
-        <button id="btnAgendarConsulta">Agende sua consulta</button>
+    </header>
+    <main id="inicio">
+      <div class="container__corpo">
+        <section>
+          <h1 class="corpo__titulo">Raiane Melo</h1>
+          <h2 class="corpo__subtitulo">Nutricionista</h2>
+        </section>
+        <section>
+          <button id="btnAgendarConsulta">Agende sua consulta</button>
+        </section>
+      </div>
+
+      <section class="cards" id="servicos">
+        <p class="titulo">Serviços</p>
+        <ul id="servicosList" class="card"></ul>
+        <button class="btn-card">Veja Todos os Serviços</button>
       </section>
-    </div>
 
-    <section class="cards" id="servicos">
-      <p class="titulo"> Serviços</p>
-      <ul id="servicosList" class="card"></ul>
-      <button class="btn-card">Veja Todos os Serviços</button>
-    </section>
-
-    <p class="titulo">Sobre mim</p>
-    <section class="container__geral">
-      <section class="container__info">
-        <div data-aos="fade-down" data-aos-duration="2500"><img class="img-sobremim" src="assets/img/profile.png"
-            alt="Foto Raiane"></div>
-        <div class="descricao" data-aos="fade-up" data-aos-duration="2500">
-          <p class="descricao__titulo">Formação & Carreira</p>
-
-          <h2 class="descricao__subtitulo">Graduada em Nutrição pelo Centro Acadêmico de Vitória (CAV/UFPE), com
-            experiência em Avaliação do Estado Nutricional como monitora. Participante do Programa Institucional de
-            Bolsas de Iniciação Científica (PIBIC), com pesquisa focada na qualidade de vida dos usuários do programa
-            MOVIMENTA VITÓRIA, em Vitória de Santo Antão.</h2>
-
-          <div class="descricao__detalhada">
-            <p class="descricao__detalhada-paragrafo">Estágio em coletividade enferma. </p>
-            <p class="descricao__detalhada-paragrafo">Estágio em coletividade sadia. </p>
-            <p class="descricao__detalhada-paragrafo">Estágio em nutrição e saúde pública. </p>
-            <p class="descricao__detalhada-paragrafo">Movimentando Vitória de Santo Antão para promoção a saúde e
-              qualidade de vida.</p>
-            <p class="descricao__detalhada-paragrafo">Nutrição em evidência: vamos conversar?</p>
+      <p class="titulo">Sobre mim</p>
+      <section class="container__geral">
+        <section class="container__info">
+          <div data-aos="fade-down" data-aos-duration="2500">
+            <img
+              class="img-sobremim"
+              src="assets/img/profile.png"
+              alt="Foto Raiane"
+            />
           </div>
-          <button class="btn-card" id="btnSaibaMais">Saiba mais sobre mim</button>
-        </div>
+          <div class="descricao" data-aos="fade-up" data-aos-duration="2500">
+            <p class="descricao__titulo">Formação & Carreira</p>
+
+            <h2 class="descricao__subtitulo">
+              Graduada em Nutrição pelo Centro Acadêmico de Vitória (CAV/UFPE),
+              com experiência em Avaliação do Estado Nutricional como monitora.
+              Participante do Programa Institucional de Bolsas de Iniciação
+              Científica (PIBIC), com pesquisa focada na qualidade de vida dos
+              usuários do programa MOVIMENTA VITÓRIA, em Vitória de Santo Antão.
+            </h2>
+
+            <div class="descricao__detalhada">
+              <p class="descricao__detalhada-paragrafo">
+                Estágio em coletividade enferma.
+              </p>
+              <p class="descricao__detalhada-paragrafo">
+                Estágio em coletividade sadia.
+              </p>
+              <p class="descricao__detalhada-paragrafo">
+                Estágio em nutrição e saúde pública.
+              </p>
+              <p class="descricao__detalhada-paragrafo">
+                Movimentando Vitória de Santo Antão para promoção a saúde e
+                qualidade de vida.
+              </p>
+              <p class="descricao__detalhada-paragrafo">
+                Nutrição em evidência: vamos conversar?
+              </p>
+            </div>
+            <button class="btn-card" id="btnSaibaMais">
+              Saiba mais sobre mim
+            </button>
+          </div>
+        </section>
       </section>
-    </section>
 
-
-    <!-- <p class="titulo">Testemunhos</p>
+      <!-- <p class="titulo">Testemunhos</p>
     <section class="container__testemunhos">
       <ul id="testemunhosList" class="testemunhos__lista"></ul>
     </section> -->
 
-    <p class="titulo" id="contato">Contato</p>
-    <section class="container__contatos">
-      <form id="formContato">
+      <p class="titulo" id="contato">Contato</p>
+      <section class="container__contatos">
+        <form id="formContato">
+          <div>
+            <input
+              type="text"
+              class="requerido nome"
+              id="nome"
+              name="nome"
+              placeholder="Nome Completo:"
+              oninput="validacaoNome()"
+              required
+            />
+            <span class="span-requerido"
+              >Nome deve ter no mínimo 3 caracteres</span
+            >
+          </div>
+          <div>
+            <input
+              type="text"
+              class="requerido whatsapp"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="WhatsApp: 99 999999999"
+              oninput="validacaoWhatsapp()"
+              required
+            />
+            <span class="span-requerido">Insira penas números</span>
+          </div>
+          <div>
+            <input
+              type="email"
+              class="requerido email"
+              id="email"
+              name="email"
+              placeholder="E-mail: exemplo@gmail.com"
+              oninput="validandoEmail()"
+              required
+            />
+            <span class="span-requerido">Digite um email válido</span>
+          </div>
+          <div>
+            <textarea
+              class="requerido mensagem"
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              placeholder="Digite sua mensagem aqui:"
+              oninput="validandoMensagem()"
+              required
+            ></textarea>
+            <span class="span-requerido"
+              >A mensagem deve ter no mínimo 10 caracteres</span
+            >
+          </div>
+          <button class="btn-form" type="submit">Enviar</button>
+        </form>
 
         <div>
-          <input type="text" class="requerido nome" id="nome" name="nome" placeholder="Nome Completo:"
-            oninput="validacaoNome()" required>
-          <span class="span-requerido">Nome deve ter no mínimo 3 caracteres</span>
-        </div>
-        <div>
-          <input type="text" class="requerido whatsapp" id="whatsapp" name="whatsapp"
-            placeholder="WhatsApp: 99 999999999" oninput="validacaoWhatsapp()" required>
-          <span class="span-requerido">Insira penas números</span>
-        </div>
-        <div>
-          <input type="email" class="requerido email" id="email" name="email" placeholder="E-mail: exemplo@gmail.com"
-            oninput="validandoEmail()" required>
-          <span class="span-requerido">Digite um email válido</span>
-        </div>
-        <div>
-          <textarea class="requerido mensagem" id="mensagem" name="mensagem" rows="4"
-            placeholder="Digite sua mensagem aqui:" oninput="validandoMensagem()" required></textarea>
-          <span class="span-requerido">A mensagem deve ter no mínimo 10 caracteres</span>
-        </div>
-        <button class="btn-form" type="submit">Enviar</button>
-      </form>
-
-      <div>
-        <ul class="info__contatos">
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <p class="contatos__texto"> meloraiane524@gmail.com</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-phone"></i>
-            <p class="contatos__texto"> (81) 98795-2709</p>
-          </li>
-          <!-- <li>
+          <ul class="info__contatos">
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <p class="contatos__texto">meloraiane524@gmail.com</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <p class="contatos__texto">(81) 98795-2709</p>
+            </li>
+            <!-- <li>
             <i class="fa-solid fa-location-dot"></i>
             <p class="contatos__texto">R. Dr. Ivo Queiroz, n° 137 - Vitória de Santo Antão- PE</p>
           </li> -->
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>2024 &#169; Desenvolvido por &lt;JB /&gt;</p>
-    <ul class="icones">
-      <li><a
-          href="mailto:ubiratanbernardo@outlook.com?subject=Contato%20para%20solicitar%20or%C3%A7amento%20de%20cria%C3%A7%C3%A3o%20de%20websites&body=Por%20favor,%20descreva%20suas%20necessidades%20e%20detalhes%20do%20projeto%20que%20deseja%20realizar."
-          target="_blank" class="icones__link">
-          <i class="fa-solid fa-envelope icones__sociais"></i>
-        </a></li>
-      <li><a
-          href="https://wa.me/5511932349135?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20website.%20Poderia%20me%20passar%20mais%20informações%3F"
-          target="_blank" class="icones__link">
-          <i class="fa-brands fa-whatsapp icones__sociais"></i>
-        </a></li>
-      <li><a href="https://www.instagram.com/jbdeveloper" target="_blank" class="icones__link">
-          <i class="fa-brands fa-instagram icones__sociais">
-
-          </i></a></li>
-    </ul>
-  </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-  <script src="assets/javascript/enviar_email.js"></script>
-  <script src="assets/javascript/scripts.js"></script>
-  <script src="assets/javascript/form.js"></script>
-  <script src="assets/javascript/validacaoForm.js"></script>
-</body>
-
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>2024 &#169; Desenvolvido por &lt;JB /&gt;</p>
+      <ul class="icones">
+        <li>
+          <a
+            href="mailto:ubiratanbernardo@outlook.com?subject=Contato%20para%20solicitar%20or%C3%A7amento%20de%20cria%C3%A7%C3%A3o%20de%20websites&body=Por%20favor,%20descreva%20suas%20necessidades%20e%20detalhes%20do%20projeto%20que%20deseja%20realizar."
+            target="_blank"
+            class="icones__link"
+          >
+            <i class="fa-solid fa-envelope icones__sociais"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/5511932349135?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20website.%20Poderia%20me%20passar%20mais%20informações%3F"
+            target="_blank"
+            class="icones__link"
+          >
+            <i class="fa-brands fa-whatsapp icones__sociais"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/jbdeveloper"
+            target="_blank"
+            class="icones__link"
+          >
+            <i class="fa-brands fa-instagram icones__sociais"> </i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+    <script async>
+      AOS.init();
+    </script>
+    <script src="assets/javascript/scripts.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      defer
+    ></script>
+    <script src="assets/javascript/enviar_email.js" defer></script>
+    <script src="assets/javascript/form.js" defer></script>
+    <script src="assets/javascript/validacaoForm.js" defer></script>
+  </body>
 </html>

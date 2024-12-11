@@ -96,7 +96,7 @@
   }
 
   .container__corpo {
-    height: 20rem;
+    height: 22rem;
   }
 
   .corpo__titulo {
@@ -292,8 +292,8 @@
   .span-requerido {
     font-size: 0.7rem;
   }
-}
 
-footer {
-  margin-top: 1.8rem;
+  footer {
+    margin-top: 1.8rem;
+  }
 }

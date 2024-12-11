@@ -2,7 +2,10 @@ const btnAgendarConsulta = document.querySelector("#btnAgendarConsulta");
 const btnSaibaMais = document.querySelector("#btnSaibaMais");
 
 btnAgendarConsulta.addEventListener("click", () => {
-  window.open("https://wa.me/558187952709?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20nutricionista%20Raiane%20Melo.%20Poderia%20me%20informar%20as%20datas%20e%20horários%20disponíveis%3F", "_blank");
+  window.open(
+    "https://wa.me/558187952709?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20nutricionista%20Raiane%20Melo.%20Poderia%20me%20informar%20as%20datas%20e%20horários%20disponíveis%3F",
+    "_blank"
+  );
 });
 
 btnSaibaMais.addEventListener("click", () => {
@@ -30,32 +33,36 @@ const servicos = [
   },
 ];
 
-const testemunhos = [
-  {
-    imagem: "assets/img/img-testemunho.svg",
-    nome: "Courtney Henry",
-    texto: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    avaliacao: "assets/img/avaliacao.png"
-  },
-  {
-    imagem: "assets/img/img-testemunho.svg",
-    nome: "Jane Doe",
-    texto: "Lorem Ipsum has been the industry's standard dummy text since the 1500s.",
-    avaliacao: "assets/img/avaliacao.png"
-  },
-  {
-    imagem: "assets/img/img-testemunho.svg",
-    nome: "John Smith",
-    texto: "When an unknown printer took a galley of type and scrambled it to make a specimen book.",
-    avaliacao: "assets/img/avaliacao.png"
-  },
-  {
-    imagem: "assets/img/img-testemunho.svg",
-    nome: "John Smith",
-    texto: "When an unknown printer took a galley of type and scrambled it to make a specimen book.",
-    avaliacao: "assets/img/avaliacao.png"
-  }
-];
+// const testemunhos = [
+//   {
+//     imagem: "assets/img/img-testemunho.svg",
+//     nome: "Courtney Henry",
+//     texto:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+//     avaliacao: "assets/img/avaliacao.png",
+//   },
+//   {
+//     imagem: "assets/img/img-testemunho.svg",
+//     nome: "Jane Doe",
+//     texto:
+//       "Lorem Ipsum has been the industry's standard dummy text since the 1500s.",
+//     avaliacao: "assets/img/avaliacao.png",
+//   },
+//   {
+//     imagem: "assets/img/img-testemunho.svg",
+//     nome: "John Smith",
+//     texto:
+//       "When an unknown printer took a galley of type and scrambled it to make a specimen book.",
+//     avaliacao: "assets/img/avaliacao.png",
+//   },
+//   {
+//     imagem: "assets/img/img-testemunho.svg",
+//     nome: "John Smith",
+//     texto:
+//       "When an unknown printer took a galley of type and scrambled it to make a specimen book.",
+//     avaliacao: "assets/img/avaliacao.png",
+//   },
+// ];
 
 const gerarServicos = () => {
   const servicosLista = document.getElementById("servicosList");
@@ -72,39 +79,36 @@ const gerarServicos = () => {
 
     servicosLista.appendChild(li);
   });
-}
-
-const gerarTestemunhos = () => {
-  const testemunhosList = document.getElementById("testemunhosList");
-
-  testemunhos.forEach((testemunho) => {
-
-    const li = document.createElement("li");
-    li.classList.add("testemunhos__lista-item");
-
-
-    li.innerHTML = `
-      <img class="testemunhos__lista-item-img" src="${testemunho.imagem}" alt="${testemunho.nome}">
-      <div class="informacoes">
-        <h1 class="testemunhos__lista-item-nome">${testemunho.nome}</h1>
-        <h2 class="testemunhos__lista-item-testemunho">${testemunho.texto}</h2>
-        <img class="avaliacao-img" src="${testemunho.avaliacao}" alt="Avaliação de ${testemunho.nome}">
-      </div>
-    `;
-
-
-    testemunhosList.appendChild(li);
-  });
 };
+
+// const gerarTestemunhos = () => {
+//   const testemunhosList = document.getElementById("testemunhosList");
+
+//   testemunhos.forEach((testemunho) => {
+//     const li = document.createElement("li");
+//     li.classList.add("testemunhos__lista-item");
+
+//     li.innerHTML = `
+//       <img class="testemunhos__lista-item-img" src="${testemunho.imagem}" alt="${testemunho.nome}">
+//       <div class="informacoes">
+//         <h1 class="testemunhos__lista-item-nome">${testemunho.nome}</h1>
+//         <h2 class="testemunhos__lista-item-testemunho">${testemunho.texto}</h2>
+//         <img class="avaliacao-img" src="${testemunho.avaliacao}" alt="Avaliação de ${testemunho.nome}">
+//       </div>
+//     `;
+
+//     testemunhosList.appendChild(li);
+//   });
+// };
 
 document.addEventListener("DOMContentLoaded", () => {
   gerarServicos();
-  gerarTestemunhos();
+  // gerarTestemunhos();
 });
 
 function toggleMenu() {
   const menu = document.getElementById("menu");
-  const hamburger = document.querySelector('.hamburger');
+  const hamburger = document.querySelector(".hamburger");
 
   menu.classList.toggle("active");
   hamburger.classList.toggle("active");
