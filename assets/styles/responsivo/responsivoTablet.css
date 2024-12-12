@@ -134,6 +134,8 @@
   }
 
   .contatos__texto {
-    text-decoration: none; /* Remove o underline */
+    text-decoration: none !important; /* Remove o underline */
+    -webkit-touch-callout: none; /* Previne callout no Safari */
+    -webkit-user-select: none;
   }
 }

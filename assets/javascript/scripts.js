@@ -9,7 +9,7 @@ btnAgendarConsulta.addEventListener("click", () => {
 });
 
 btnSaibaMais.addEventListener("click", () => {
-  alert("clicou");
+  console.log("clicou");
 });
 
 const servicos = [

@@ -106,7 +106,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-decoration: none; /* Remove o underline */
+  text-decoration: none !important; /* Remove o underline */
+  -webkit-touch-callout: none; /* Previne callout no Safari */
+  -webkit-user-select: none;
 }
 
 .span-requerido {

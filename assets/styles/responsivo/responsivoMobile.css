@@ -288,8 +288,9 @@
 
   .contatos__texto {
     font-size: 0.875rem;
-    color: inherit; /* Mantém a cor herdada */
-    text-decoration: none; /* Remove o underline */
+    text-decoration: none !important; /* Remove o underline */
+    -webkit-touch-callout: none; /* Previne callout no Safari */
+    -webkit-user-select: none; /* Previne a seleção do número */
   }
 
   .span-requerido {
