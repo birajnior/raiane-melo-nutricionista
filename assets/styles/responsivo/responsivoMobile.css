@@ -288,6 +288,8 @@
 
   .contatos__texto {
     font-size: 0.875rem;
+    color: inherit; /* Mantém a cor herdada */
+    text-decoration: none; /* Remove o underline */
   }
 
   .span-requerido {
