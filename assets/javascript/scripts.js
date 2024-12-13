@@ -1,5 +1,6 @@
 const btnAgendarConsulta = document.querySelector("#btnAgendarConsulta");
 const btnSaibaMais = document.querySelector("#btnSaibaMais");
+const btnServicos = document.querySelector("#servicosPrestatos");
 
 btnAgendarConsulta.addEventListener("click", () => {
   window.open(
@@ -8,8 +9,18 @@ btnAgendarConsulta.addEventListener("click", () => {
   );
 });
 
+btnServicos.addEventListener("click", () => {
+  window.open(
+    "https://wa.me/558187952709?text=Olá%2C%20gostaria%20de%20saber%20quais%20todos%20os%20serviços%20que%20você%20oferece.",
+    "_blank"
+  );
+});
+
 btnSaibaMais.addEventListener("click", () => {
-  console.log("clicou");
+  window.open(
+    "https://wa.me/558187952709?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20sua%20formação!",
+    "_blank"
+  );
 });
 
 const servicos = [
